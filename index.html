@@ -23,6 +23,12 @@
                             <img src="./img/logo_bankiros.svg" class="logo__img" alt="logo">
                         </a>
                     </div>
+                    <div id="nav-icon3">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                     
                 <div class="currency-block-wrap">
                     <div class="currency-block">
@@ -105,11 +111,7 @@
             <div class="header-bottom">
                 <div class="wrapper">
               <nav class="navigation">
-                    <!-- <button class="menu-toggle">
-                       <span></span>
-                       <span></span>
-                       <span></span>
-                   </button> -->
+
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu__link">КУРСЫ ВАЛЮТ</a>
@@ -833,5 +835,12 @@
     </footer>
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+           $(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+    </script>
 </body>
 </html>
